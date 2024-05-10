@@ -26,6 +26,8 @@ torch 2.2.1+cu118
 
 The goal of this project is to build a Long Short Term Memory (LSTM) neural network to classify sequences into one of 5 classes. LSTM is implemented using Python with the Pytorch library. This project serves as an educational exercise and practical application of deep learning techniques to sequence classification tasks.
 
+The training and test data are chord sequences with the assigned composer of a chord sequence saved in a pkl file. The goal of the network is to classify sequences into the appropriate composer.
+
 The number of sequences per composer is unbalanced (as shown in histogram below), making the network difficult to train as it tends to classify all sequences into one class/composer. In order to train the network more balanced, weights were assigned to classes based on their number of sequences (the fewer sequences a class has, the bigger weight assigned to it). 
 
 ![image](https://github.com/pzemla/Classification-of-chord-sequences-using-LSTM/assets/135070990/fa600388-5e6b-44b6-a052-e98630cbc7c7)
