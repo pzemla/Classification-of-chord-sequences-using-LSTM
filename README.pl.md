@@ -59,3 +59,7 @@ Dokładność poszczególnych klas: 81% 61% 28% 67% 45%
 Średnia dokładności klas: 57%
 
 Chociaż ogólna dokładność jest stosunkowo wysoka, dokładność każdej indywidualnej klasy różni się w zależności od liczby sekwencji w danych klasowych. Bez dodawania wag do każdej klasy, LSTM zaklasyfikował większość sekwencji do pierwszej klasy, co pozwoliło uzyskać wysoką dokładność, ale średnia dokładność klasy wynosiła tylko około 20% (100% dla pierwszej klasy, 0% dla wszystkich pozostałych). Dokładność poszczególnych klas można poprawić poprzez zwiększenie wag klas, dzięki czemu klasy z mniejszą ilością danych będą miały większy wpływ na trenowanie sieci. Inną możliwą metodą mogłoby być wyrównanie ilości danych we wszystkich klasach, poprzez zmniejszenie liczby sekwencji akordów w pierwszej klasie, albo powielenie ich w innych klasach z mniejszą ilością danych.
+
+## Licencja
+
+Ten projekt jest dostępny na licencji MIT - zobacz plik LICENSE dla szczegółów.
