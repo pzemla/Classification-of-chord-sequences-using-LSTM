@@ -60,3 +60,7 @@ Accuracy of individual classes: 81% 61% 28% 67% 45%
 Average class accuracy: 57%
 
 While overall accuracy is relatively high, accuracy of every individual class varies depending on number of sequences in class data. Without added weights to each class, LSTM classified most of sequences into first class, which achieved high accuracy, but average class accuracy was only around 20% (100% for first class, 0% for all others). Accuracy of individual classes could be further improved by increasing class weights, so that classes with less data have higher impact during training. Other possible method could be equalizing quantity of data in all classes, either by decreasing amount of chord sequences in first class, or duplicating them in other classes with less data.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
